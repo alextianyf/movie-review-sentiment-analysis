@@ -1,0 +1,19 @@
+# Recreate the conda environment from scratch with:
+#   conda env create -f environment.yml
+#   conda activate movie-review-sentiment-analysis
+name: movie-review-sentiment-analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - pandas==3.0.3
+      - scikit-learn==1.8.0
+      - numpy==2.4.6
+      - matplotlib==3.10.9
+      - seaborn==0.13.2
+      - wordcloud==1.9.6
+      - jupyter==1.1.1
+      - notebook==7.5.6
+      - ipykernel==7.2.0
